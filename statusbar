@@ -1,0 +1,8 @@
+# Statusbar loop
+while true; do
+   CPU=$(/home/eve/.pkgs/dwm/dwmcpu)
+   RAM=$(/home/eve/.pkgs/dwm/dwmram)
+   TIME=$(/home/eve/.pkgs/dwm/dwmtime)
+   xsetroot -name " CPU:$CPU| RAM:$RAM|$TIME"
+   sleep 1
+done &
